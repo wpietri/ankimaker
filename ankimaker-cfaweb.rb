@@ -9,15 +9,11 @@ require 'pp'
 # it in a Anki-friendly format to make it easy to learn who people
 # are.
 #
-# As currently written, it just works on the CfA team page.
-# Making it more magic is probably not worth it; better just to
-# custom-write the expressions each time.
-#
-# Note that tags are useful to sort cards into groups. Here they
-# are tagged by department.
+# As currently written, it just works on the CfA web site team page.
+# This is left more as an example; the ankimaker-cfa script is the
+# useful version.
 
-source = 'http://www.codeforamerica.org/about/board/'
-#source = 'http://www.codeforamerica.org/about/team/'
+source = 'http://www.codeforamerica.org/about/team/'
 doc = Nokogiri::HTML(open(source))
 
 

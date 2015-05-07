@@ -6,12 +6,14 @@ require 'open-uri'
 require 'pp'
 
 # Anki (http://ankisrs.net/) is a flashcard program. This script
-# extracts pictures and descriptions from an HTML file and exports
-# it in a Anki-friendly format to make it easy to learn who people
-# are.
+# extracts pictures and descriptions from the codeforamerica.org
+# source tree and assembles it into an Anki-friendly format to
+# make it easy to learn who people are.
 #
 # Note that tags are useful to sort cards into groups. Here they
-# are tagged by department.
+# are tagged by department/role/fellowship year. A plausible way
+# for a new employee to use this is to import everything and then
+# suspend all the cards that are not immediately relevant.
 
 
 def tags_for(strings) 
